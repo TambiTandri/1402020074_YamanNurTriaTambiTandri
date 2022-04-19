@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tokopedia</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header1 d-flex justify-content-between align-item-center">
+      <div class="d-flex align-item-center">
+        <img class="mr-2" src="img/1.png" alt="">
+        <a>Download Tokopedia App</a>
+      </div>
+
+      <div class="col-sm-5">
+      </div>
+      <div class="col-sm-5 position-right">
+        <a class="mini-header">Tentang Tokopedia</a>
+        <a class="mini-header">Mitra Tokopedia</a>
+        <a class="mini-header">Mulai Berjualan</a>
+        <a class="mini-header">Promo</a>
+        <a class="mini-header">Tokopedia Care</a>
+      </div>
+      </div>
+      <div class="header-2 d-flex flex-column">
+        <div class="d-flex justify-content-between align-item-center">
+          <img class="tokped" src="img/logo-tokped.svg">
+          <span class="text-kategori">Kategori</span>
+          <div class="wrap-pencarian">
+            <input type="text" class="control" placeholder="Cari Disini">
+            <img class="troli" src="img/cart-shopping-solid.svg" alt="">
+            
+            <button class="bm">Masuk</button>
+            <button class="bd">Daftar</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 0px 30px 0px 30px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/c1.jpg" class="d-block w-100" alt="Los Angeles" style="width:100%;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/c2.jpg" class="d-block w-100" alt="Chichago" style="width:100%;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row-content">
+        <div class="col-sm-5" style="margin-left: 32px;">
+          <h3 style="padding-bottom: 15px;">Kategori Pilihan</h3>
+          <div class="row">
+            <div class="col-sm-3 content">
+              <img src="img/2.jpg" width="100%">
+          </div>
+          <div class="col-sm-3 content">
+              <img src="img/3.jpg" width="100%">
+          </div>
+          <div class="col-sm-3 content">
+              <img src="img/4.jpg" width="100%">
+          </div>
+          <div class="col-sm-3 content">
+              <img src="img/5.jpg" width="100%">
+          </div>
+
+          <div class="col-sm-6 content" style="margin: 30px 30px 30px 30px;">
+            <h3 style="padding-bottom: 15px;">Top Up dan Tagihan</h3>
+            <div class="row" style="text-align: center;">
+                <div class="col-sm-3 content-nav" id="pls">
+                    Pulsa
+                </div>
+                <div class="col-sm-3 content-nav" id="kuota">
+                    Paket
+                </div>
+                <div class="col-sm-3 content-nav">
+                    Listrik
+                </div>
+                <div class="col-sm-3 content-nav">
+                    PLN
+                </div></div>
+
+            <div class="row" style="flex: 1 1 auto;">
+                <div class="col-sm-6">
+                    <label for="">
+                    Nomor Telpon
+                    </label>
+                    <input type="text" class="pulsa" placeholder="0812345678" id="noHp">
+                </div>
+                <div class="col-sm-6">
+                    <label for="">
+                        Nominal
+                    </label>
+                     <select id="nominal" class="pulsa"  disabled>
+                                <option value="0">Pilih</option>
+                                <option value="1">Rp. 1.000</option>
+                                <option value="2">Rp. 3.000</option>
+                                <option value="3">Rp. 5.000</option>
+                                <option value="4">Rp. 10.000</option>
+                                <option value="5">Rp. 20.000</option>
+                                <option value="6">Rp. 25.000</option>
+                                <option value="7">Rp. 50.000</option>
+                                <option value="8">Rp. 100.000</option>
+                            </select>
+                     <select id="nominalPkt" class="pulsa" disabled hidden>
+                            <option value="0">Pilih</option>
+                            <option value="1">Internet 10 GB - Rp. 30.500</option>
+                            <option value="2">Internet 15 GB - Rp. 43.000</option>
+                            <option value="3">Internet Combo Unlimited (Kuota Malam) - Rp. 20.000</option>
+                            <option value="4">Internet Combo Unlimited - Rp. 70.000</option>
+                        </select>
+                </div>
+                <div class="col-sm-6" style="margin-top: 25px;">
+                  <button class="medium-header-fill-grey" disabled id="griy">Beli</button>
+                  <button class="medium-header-fill-green" hidden id="buttonpulsa">Beli</button>
+                  <button class="medium-header-fill-green" hidden id="buttonpaket">Beli</button>
+                </div>
+            </div>
+        </div>
+  </div>
+  </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+<script> 
+ $(document).ready(function(){
+    $("#noHp").on('change', function(){
+        if ($("#noHp").val() > 0) {
+            $("#nominal").prop("disabled", false);
+            $("#nominalPkt").prop("disabled", false);
+            // alert("Nomor telepon adalah " + $("#noHp").val())
+            }
+            console.log($("#noHp"), fall())
+});
+$("#nominal").change(function(){
+    $("#griy").hide();
+    $("#buttonpaket").hide();
+    $("#buttonpulsa").show();
+                            
+});
+$("#pulsa").on('click', function(){
+    $("#nominal").show();
+    $("#nominalPkt").hide();
+    });
+
+$("#nominalPkt").change(function(){
+    $("#griy").hide();
+    $("#buttonpaket").show();
+    $("#buttonpulsa").hide();
+                            
+});
+$("#paket").on('click', function(){
+    $("#nominal").hide();
+    $("#nominalPkt").show();
+});
+
+$("#buttonpulsa").on('click', function(){
+                            var nilai = $("#nominal").find('option').filter(':selected').text();
+                            var hasil = parseInt(nilai);
+
+                            if ($("#nominal").val() >= 4) {
+                                hasil = hasil + 2000;
+
+                                if(confirm("Pembelian pulsa sebesar " + nilai + " ke nomor " + $("#noHp").val())){
+                                    alert("Total harga pulsa Rp. " + hasil + ",- ke nomor " + $("#noHp").val() + " sedang di proses. Terima Kasih:)")
+                                } else {
+                                    alert("pembelian pulsa Rp. " + nilai + ",- ke nomor " + $("#noHp").val() + " dibatalkan!")
+                                }
+                                //confirm("Pembelian pulsa sebesar " + hasil + " ke nomor " + $("#noHp").val())
+                            } else {
+                                hasil = hasil + 3000;
+                                if(confirm("Pembelian pulsa sebesar " + nilai + " ke nomor " + $("#noHp").val())){
+                                    alert("Total harga pulsa Rp. " + hasil + ",- ke nomor " + $("#noHp").val() + " sedang di proses. Terima Kasih:)")
+                                } else {
+                                    alert("pembelian pulsa Rp. " + nilai + ",- ke nomor " + $("#noHp").val() + " dibatalkan!")
+                                }
+
+                            }
+                        });
+                        
+$("#buttonpaket").click(function() {
+         const pilihan = $("#nominal").children("option:selected").text();
+         const pilihan2 = $("#nominalPkt").children("option:selected").text();
+         var jumlah = pilihan.substring(4); 
+         var hasil = "";
+
+        if (pilihan2 != "Pilih") {
+            var totalKuota = pilihan2.substring(pilihan2.length - 10);
+            let valKuota = confirm("Pembelian paket data " + pilihan2 + " ke nomor " + $("#noHp").val()+ " sedang di proses. Terima Kasih :)");
+            if (valKuota) {
+                alert("Total harga paket data " + totalKuota + ",- ke nomor " + $("#noHp").val());
+            } else {
+
+            }
+        }
+    });
+});
+</script>
